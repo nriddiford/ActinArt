@@ -10,7 +10,16 @@ $(".navbar a").click(function(){
         scrollTop:$("#" + $(this).data('value')).offset().top
     },1000)
 
-})
+});
+
+// Header button -> scroll down
+$(".header button").click(function(){
+    $("body,html").animate({
+        scrollTop:$("#" + $(this).data('value')).offset().top
+    },1000)
+
+});
+
 
 
 // // navbar collapse

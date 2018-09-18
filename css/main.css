@@ -4,6 +4,10 @@ html, h1, h2, h3, h4, h5, h6, p, a {
     font-family: "Raleway";
 }
 
+html,body {
+    height: 100%;
+}
+
 /*!* Nav bar*!*/
 
 .navbar {
@@ -16,10 +20,6 @@ html, h1, h2, h3, h4, h5, h6, p, a {
 
 .nav-link {
     margin-right: 1em !important;
-}
-
-.nav-item btn {
-    color: rgba(141, 162, 180, 0.9);
 }
 
 .nav-link:hover {
@@ -44,7 +44,7 @@ html, h1, h2, h3, h4, h5, h6, p, a {
     min-width: 100%;
     left: 0;
     top: 0;
-    background: rgba(244, 244, 244, 0.43);
+    background: rgba(244, 244, 244, 0.47);
 }
 
 .description {
