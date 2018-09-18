@@ -8,6 +8,11 @@ html,body {
     height: 100%;
 }
 
+.t-lg {
+    font-size: 150%;
+    line-height: 2vw;
+}
+
 /*!* Nav bar*!*/
 
 .navbar {
