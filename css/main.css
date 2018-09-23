@@ -16,13 +16,10 @@ a {
   font-family: "Raleway", serif;
 }
 
-html, body {
-  height: 100%;
+html {
+  height: 100%!important;
 }
 
-.min-100 {
-  min-height: 100%;
-}
 
 /* Nav bar */
 .navbar {
@@ -43,12 +40,13 @@ html, body {
   justify-content: flex-end;
 }
 /* header style */
-.header {
-  background-image: url(../images/Book_example_cad_.jpg);
-  background-attachment: fixed;
+header {
+  background-image: url(../images/Book_example_cad_s.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
+
 .overlay {
   position: absolute;
   min-height: 100%;
@@ -61,7 +59,7 @@ html, body {
   position: absolute;
   top: 30%;
   margin: auto;
-  padding: 2em;
+  padding: 1em;
 }
 .description h1 {
   color: rgba(11, 29, 43, 0.87);
@@ -84,6 +82,7 @@ html, body {
 }
 .card {
   background: rgba(82, 112, 122, 0.09);
+/*  min-width: 10%;*/
 }
 .card:hover {
   box-shadow: 0 12px 24px 0 rgba(76, 183, 255, 0.53);
@@ -92,20 +91,31 @@ html, body {
   /* Safari 6.0 - 9.0 */
   filter: opacity(100%);
 }
-/* Google map */
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 50%;
-  position: relative;
-  height: 0;
-}
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
+/* Contact form map */
+
+/* Style inputs */
+input[type=text], select, textarea {
   width: 100%;
-  position: absolute;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
 /* Footer */
 .footer {
   background: #061D25;
@@ -132,20 +142,42 @@ Extra small devices (portrait phones, less than 544px)
 No media query since this is the default in Bootstrap because it is "mobile first"
 */
 p {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
+
+
+@media (max-width: 542px) {
+ header {
+     background-image: url(../images/Book_example_cad_xs.jpg);
+    }
+    .description{
+        top: 15%;
+    }
+    
+}
+
 /*Bootstrap 4 breakpoints*/
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {
   p {
     font-size: 1rem;
   }
+/*
+    body{
+        background-color: azure;
+    }
+*/
 }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
   p {
     font-size: 1.1rem;
   }
+/*
+    body{
+        background-color: antiquewhite;
+    }
+*/
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -153,24 +185,34 @@ p {
     font-size: 1.1rem;
     line-height: 1.5;
   }
+/*
+    body{
+        background-color: darkseagreen;
+    }
+*/
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   p {
     font-size: 1.2rem;
-    line-height: 1.75;
+    line-height: 1.6;
   }
+/*
+    body{
+        background-color: yellow;
+    }
+*/
 }
 /*# sourceMappingURL=main.css.map */
 
 
 @supports(padding: max(0px)) {
-  .post {
+  .body {
     padding-left: max(12px, env(safe-area-inset-left));
     padding-right: max(12px, env(safe-area-inset-right));
   }
 }
 
-.body {
+.header {
   padding: env(safe-area-inset) !important;
 }
