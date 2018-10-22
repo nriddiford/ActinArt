@@ -113,6 +113,16 @@ header {
     filter: opacity(100%);
 }
 
+.zoom {
+    transition: transform .3s; /* Animation */
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
 /* Footer */
 .footer {
     background: #061D25;
@@ -148,8 +158,8 @@ header {
     }
 
     .card-deck {
-        padding-left: 2.5em !important;
-        padding-right: 2.5em !important;
+        padding-left: 1.5em !important;
+        padding-right: 1.5em !important;
     }
 }
 
