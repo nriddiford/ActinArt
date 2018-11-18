@@ -106,8 +106,8 @@ header {
 
 .arrow {
     box-sizing: border-box;
-    height: 5vw;
-    width: 5vw;
+    height: 3em;
+    width: 3em;
     position: absolute;
     top: 80%;
     left: 50%;
@@ -170,7 +170,7 @@ header {
 }
 
 .parallax.sep-2 {
-    background: linear-gradient(rgba(82, 183, 209, 0.96), rgb(41, 95, 172));
+    background: linear-gradient(rgba(144, 123, 218, 0.86), rgb(71, 13, 172));
     background-attachment: fixed;
 }
 
@@ -180,7 +180,7 @@ header {
 }
 
 .parallax.sep-4 {
-    background: linear-gradient(rgba(239, 131, 120, 0.79), rgba(198, 69, 39, 0.88));
+    background: linear-gradient(rgba(239, 37, 68, 0.62), rgba(198, 29, 56, 0.88));
     background-attachment: fixed;
 }
 
@@ -189,10 +189,6 @@ header {
     background-attachment: fixed;
 }
 
-.parallax.contact-sep {
-    background: linear-gradient(rgba(150, 63, 209, 0.82), rgba(209, 61, 145, 0.82));
-    background-attachment: fixed;
-}
 /* Footer */
 .footer {
     background: #061D25;
@@ -272,4 +268,13 @@ header {
         padding-left: max(12px, env(safe-area-inset-left));
         padding-right: max(12px, env(safe-area-inset-right));
     }
+}
+
+
+
+form {
+    width: 450px;
+    /*margin: 2% auto;*/
+    display: inline-block;
+
 }
