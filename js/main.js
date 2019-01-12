@@ -30,20 +30,25 @@ $(document).ready(function(){
     });
 });
 
+
 ScrollReveal().reveal('.reveal', {reset: true})
 
-// Scroll to id from nav items
-// $(".navbar a").click(function () {
-//     $("body,html").animate({
-//         scrollTop: $("#" + $(this).data('value')).offset().top - $('.navbar').height() - 14
-//     }, 1000)
-// });
-//
-// // Header button -> scroll down
-// $(".header button").click(function () {
-//     $("body,html").animate({
-//         scrollTop: $("#" + $(this).data('value')).offset().top - $('.navbar').height() - 14
-//     }, 1000)
-//
-// });
+// Function to move logo from one column to the next on medium screen sizes
+function moveCol(x) {
+    if (x.matches) { // If media query matches
+        document.getElementById('next_col').prepend(
+            document.getElementById('logo')
+        );
+    } else {
+        if ($("#next_col").children("#logo").length > 0) {
+            document.getElementById('current_col').prepend(
+                document.getElementById('logo')
+            );
+        }
+    }
+}
+
+var x = window.matchMedia("(max-width: 992px)")
+moveCol(x) // Call listener function at run time
+x.addListener(moveCol) // Attach listener function on state changes
 
