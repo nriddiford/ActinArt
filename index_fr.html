@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
     <!-- Meta tags -->
     <meta charset='utf-8'>
@@ -34,9 +34,10 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
 </head>
 <!--Scroll spy-->
-<body data-spy="scroll" data-target=".navbar" data-offset="50" class="post">
+<body data-spy="scroll" data-target=".navbar" data-offset="65" class="post">
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <!-- Brand -->
@@ -46,7 +47,6 @@
     <a class="navbar-brand navbar-left" href="index_fr.html">
         <img src="images/FR_flag.jpg" width="50" height="30" alt="">
     </a>
-
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -70,6 +70,9 @@
             <li class="nav-item">
                 <a class="nav-link" data-value="exhibitions" href="#exhibitions">Expositions</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" data-value="join" href="#join">Join</a>
+            </li>
 
             <li class="nav-item">
                 <a class="btn" href="mailto:asso.actine@gmail.com">
@@ -81,25 +84,32 @@
 </nav>
 
 
-<header class="header">
+<header id="header" class="header">
     <div class="overlay"></div>
     <div class="container">
         <div class="description ml-3">
             <h1>Actine Art</h1>
+            <h2 id="headtext"></h2>
             <p>De magnifiques histoires scientifiques adressées pour nos petits curieux</p>
-            <button type="button" class="btn btn-outline-secondary btn-lg" data-value="about">Voir plus
-            </button>
+            <!--<button type="button" class="btn btn-outline-secondary btn-lg" data-value="about">See-->
+            <!--more-->
+            <!--</button>-->
         </div>
+        <a data-scroll href="#about">
+            <div class="arrow"></div>
+        </a>
+        <!--<a class="ct-btn-scroll" href="#about"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>-->
     </div>
 </header>
 
 
-<div class="flex-container mt-5 reveal" id="about">
-    <h1 class="text-center display-3 mb-3">A propos de nous</h1>
+<div id="about" class="container">
+    <h1 class="text-center display-3 mb-4">A propos de nous</h1>
     <div class="row justify-content-center">
+        <div class="col-xs-12 col-md-6" id="current_col">
 
-        <div class="col-xs-12 col-md-6 col-lg-4 reveal">
-            <img src="images/LOGO_greenBlue.png" class="img-fluid mb-5 mx-auto d-block" alt="Logo">
+            <img src="images/LOGO_greenBlue.png" class="img-fluid mb-5 mx-auto d-block" id="logo" alt="Logo">
+
             <p>L’Association des Artistes et des Scientifiques Actine est un projet autour de la communication
                 scientifique alliant science et art. Il vise à susciter l'intérêt du grand public pour les sciences et à
                 expliquer les récentes découvertes scientifiques. Nous sommes en plein milieu d'une série de livres
@@ -107,8 +117,9 @@
                 des histoires d'aventures amusantes pour les 3 - 5 ans.
             </p>
 
-            <p class="reveal">Puisque les termes et idées scientifiques que nous développons dans nos histoires sont les
-                exactes représentations de ce peut être observé ou dit en science, les parents et enseignants qui lisent
+            <p>Puisque les termes et idées scientifiques que nous développons dans nos histoires sont les
+                exactes représentations de ce qui peut être observé ou dit en science, les parents et enseignants qui
+                lisent
                 les histoires aux enfants apprendront par la même occasion et seront de ce fait plus à même d'expliquer
                 correctement ces notions à leur enfants.
                 Les personnages de nos histoires sont basés sur des molécules, protéines, cellules que nous rencontrons
@@ -118,119 +129,128 @@
             </p>
         </div>
 
-        <div class="col-xs-12 col-md-6 col-lg-4 reveal">
-            <img src="images/ActinArt_s2.jpg" alt="Actin Art" class="img-fluid">
+        <div class="col-xs-12 col-md-6" id="next_col">
+            <img src="images/ActinArt_s2.jpg" alt="Actin Art" class="mx-auto d-block img-fluid">
         </div>
     </div>
 </div>
 
 
-<div class="flex-container mt-5 reveal" id="people">
-    <h1 class="text-center mb-3 display-3">L'équipe</h1>
-    <div class="row justify-content-center ">
-        <div class="col-xs-8 col-sm-11 col-md-10 col-lg-11 col--12">
-            <div class="card-deck mt-2">
-                <!-- Olga -->
-                <div class="card p-3 mb-4 reveal">
-                    <img class="card-img-top" src="images/Olga_s.png" alt="Olga">
-                    <div class="card-body">
-                        <h5 class="card-title">Olga Markova</h5>
-                        <p class="card-text text-muted">Présidente</p>
-                    </div>
-                </div>
+<div id="people" class="parallax sep-1 mt-5 mb-4"></div>
 
-                <!-- Judith -->
-                <div class="card p-3 mb-4 reveal">
-                    <img class="card-img-top" src="images/Judith_Mine-Hattab.png" alt="Judith">
-                    <div class="card-body">
-                        <h5 class="card-title">Judith Mine-Hattab</h5>
-                        <p class="card-text text-muted">Treasurer</p>
-                    </div>
-                </div>
 
-                <div class="w-100 d-none d-xs-block d-sm-block d-md-none d-lg-none"></div><!-- wrap every 2 on sm-->
-
-                <!-- Marine -->
-                <div class="card p-3 mb-4 reveal">
-                    <img class="card-img-top" src="images/Marine_s.png" alt="Marine">
-                    <div class="card-body">
-                        <h5 class="card-title">Marine Stefanutti</h5>
-                        <p class="card-text text-muted">Secretary</p>
-                    </div>
-                </div>
-
-                <div class="w-100 d-none d-md-block d-xl-none"></div><!-- wrap every 3 on md-->
-
-                <!-- Angela -->
-                <div class="card p-3 mb-4 reveal">
-                    <img class="card-img-top" src="images/Angela.png" alt="Angela">
-                    <div class="card-body">
-                        <h5 class="card-title">Angela Bellini</h5>
-                        <p class="card-text text-muted">Vice-présidente</p>
-                    </div>
-                </div>
-
-                <div class="w-100 d-none d-xs-block d-sm-block d-md-none d-lg-none"></div><!-- wrap every 2 on sm-->
-
-                <!-- Bertsy -->
-                <div class="card p-3 mb-4 reveal">
-                    <img class="card-img-top" src="images/Bertis_s.png" alt="Bertsy">
-                    <div class="card-body">
-                        <h5 class="card-title">Bertsy Goic</h5>
-                        <p class="card-text text-muted">Social media</p>
-                    </div>
-                </div>
-
-                <!-- Nick -->
-                <div class="card p-3 mb-4">
-                    <img class="card-img-top reveal" src="images/nick.png" alt="Nick">
-                    <div class="card-body">
-                        <h5 class="card-title">Nick Riddiford</h5>
-                        <p class="card-text text-muted">Web developer</p>
-                    </div>
-                </div>
-                <div class="w-100 d-none d-xs-block d-sm-block d-md-none d-lg-none"></div><!-- wrap every 2 on sm-->
-                <div class="w-100 d-none d-md-block d-xl-none"></div> <!-- wrap every 3 on md-->
-
-            </div>
-        </div>
-    </div>
-
-</div>
-
-<!--TODO: Creche -> l'ecole maternelle-->
-
-<div class="flex-container mt-5 reveal" id="school-workshops">
-    <h1 class="text-center display-3 mb-3">Activité scolaire</h1>
+<div class="flex-container">
+    <h1 class="text-center mb-4 display-3">L'équipe</h1>
     <div class="row justify-content-center">
-        <div class="col-xs-12 col-md-6 col-lg-4 reveal">
-            <img src="images/cadherine-Joann.jpg" alt="Workshop" class="img-fluid">
-            <p>
-            </p>
+        <div class="col-xs-10 col-xl-12 card-deck">
+
+            <!-- Olga -->
+            <div id="olga" class="card p-3 mb-4">
+                <img class="card-img-top" src="images/Olga_s.png" alt="Olga">
+                <div class="card-body">
+                    <h5 class="card-title">Olga Markova</h5>
+                    <p class="card-text text-muted">Présidente</p>
+                </div>
+            </div>
+
+            <!-- Judith -->
+            <div class="card p-3 mb-4">
+                <img class="card-img-top" src="images/Judith_Mine-Hattab_400.png" alt="Judith">
+                <div class="card-body">
+                    <h5 class="card-title">Judith Mine-Hattab</h5>
+                    <p class="card-text text-muted">Treasurer</p>
+                </div>
+            </div>
+
+            <div class="w-100 d-none d-sm-block d-md-none"></div> <!-- wrap every 2 on screens <= sm-->
+
+            <!-- Marine -->
+            <div class="card p-3 mb-4">
+                <img class="card-img-top" src="images/Marine_s.png" alt="Marine">
+                <div class="card-body">
+                    <h5 class="card-title">Marine Stefanutti</h5>
+                    <p class="card-text text-muted">Secretary</p>
+                </div>
+            </div>
+
+            <div class="w-100 d-none d-md-block d-xl-none"></div> <!-- wrap every 3 on screen > sm <= md-->
+
+            <!-- Angela -->
+            <div class="card p-3 mb-4">
+                <img class="card-img-top" src="images/Angela_400.png" alt="Angela">
+                <div class="card-body">
+                    <h5 class="card-title">Angela Bellini</h5>
+                    <p class="card-text text-muted">Vice-présidente</p>
+                </div>
+            </div>
+
+            <div class="w-100 d-none d-sm-block d-md-none"></div> <!-- wrap every 2 on screens <= sm-->
+
+            <!-- Bertsy -->
+            <div class="card p-3 mb-4">
+                <img class="card-img-top" src="images/Bertis_400.png" alt="Bertsy">
+                <div class="card-body">
+                    <h5 class="card-title">Bertsy Goic</h5>
+                    <p class="card-text text-muted">Social media</p>
+                </div>
+            </div>
+
+            <!-- Nick -->
+            <div class="card p-3 mb-4">
+                <img class="card-img-top" src="images/nick_400.png" alt="Nick">
+                <div class="card-body">
+                    <h5 class="card-title">Nick Riddiford</h5>
+                    <p class="card-text text-muted">Web developer</p>
+                </div>
+            </div>
+
+            <div class="w-100 d-none d-sm-block d-md-none"></div> <!-- wrap every 2 on screens <= sm-->
+            <div class="w-100 d-none d-md-block d-xl-none"></div> <!-- wrap every 3 on screen > sm <= md-->
+
         </div>
-        <div class="col-xs-12 col-md-6 col-lg-4 reveal">
-            <p>Nous avons récemment organisé un atelier à la "Crèche des Lyonnais" située dans le 5ème arrondissement de
+    </div>
+</div>
+
+
+<div id="school-workshops" class="parallax sep-2 mt-5 mb-4"></div>
+
+
+<div class="container">
+    <h1 class="text-center display-3 mb-4">Activité scolaire</h1>
+    <div class="row justify-content-center">
+        <div class="col-xs-12 col-md-6 mb-3">
+            <img src="images/scaled/cadherine-Joann.png" alt="Workshop" class="mx-auto d-block img-fluid">
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+            <p>Nous avons récemment organisé un atelier à la "Maternelle des Lyonnais" située dans le 5ème
+                arrondissement de
                 Paris. Après une lecture d'environ 15 minutes de nos histoires, nous avons organisé des activités liées
                 à certaines d'entre elles. Ce fut un énorme succès et les enfants étaient vraiment impliqués dans nos
                 histoires. Nous sommes revenu trois mois plus tard dans la même école pour observer la longévité et
                 l'impact de notre activité et nous avons été ravis de découvrir que les enfants se souvenaient de
-                certains concepts clés et nom de personnage de nos histoires! De vrais petits scientifiques !
+                certains concepts clés et nom de personnage de nos histoires! De vrais petits scientifiques!
             </p>
 
-            <p class="reveal">L'école nous a grandement remercié pour notre implication et attend avec impatience notre
+            <p>L'école nous a grandement remercié pour notre implication et attend avec impatience notre
                 prochain atelier - tout comme nous! En fait, nous aimerions organiser des sessions similaires dans
-                d'autres crèches (3 à 5 ans) autour de Paris.
+                d'autres maternelles (3 à 5 ans) autour de Paris.
                 Si vous souhaitez nous inviter à en organiser une dans votre école, n'hésitez pas à nous
                 <a href="mailto:asso.actine@gmail.com">contacter par email!</a></p>
         </div>
-
     </div>
+
+</div>
 </div>
 
-<div class="flex-container mt-5 reveal" id="books">
-    <h1 class="text-center mb-3 display-3">Livres</h1>
-    <div class="row justify-content-center h-100">
-        <div class="col-xs-12 col-md-10 col-xl-8 reveal">
+
+<div id="books" class="parallax sep-3 mt-5 mb-4"></div>
+
+
+<div class="container">
+    <h1 class="text-center mb-4 display-3">Livres</h1>
+    <div class="row justify-content-center">
+        <div class="col">
             <p>Nous avons travaillé très dur pour réussir à publier certaines de nos histoires et sommes ravis
                 d’annoncer que les trois premières, qui font partie de la collection Jeunesse "Esprits Curieux", seront
                 publiées en novembre 2018!
@@ -241,107 +261,189 @@
                 également merveilleuses à regarde.
             </p>
 
-            <p class="reveal"><strong>Les trois premiers albums seront disponibles à partir du 22 novembre!</strong></p>
+            <p><strong>Les trois premiers albums seront disponibles!</strong></p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid mt-5">
+    <div class="row align-items-center">
+        <div class="col-md-4 mb-3 justify-content-center text-center">
+            <div class="hvrbox zoom">
+
+                <img src="images/scaled/markova.jpg" alt="Markova" class="img-fluid mx-auto d-block" width="350"
+                     height="350">
+                <div class="hvrbox-layer_top img-fluid mx-auto d-block" width="350" height="350">
+                    <div class="hvrbox-text fit"><strong>Cadhérine cherche un ami</strong><br><br>
+                        Cadhérine est seule à l'intérieur de l'immense cellule biologique. rêve d'avoir un ami avec
+                        qui elle pourrait jouer. Alors, elle part à sa recherche!
+                    </div>
+                </div>
+            </div>
+
+            <form class="form-inline justify-content-center mt-5 mb-3" target="paypal"
+                  action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="6W23FBHDR4KWL">
+                <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_cart_LG.gif" border="0"
+                       name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+                     height="1">
+            </form>
+
+            <p><strong>Aucun envoi postal</strong></p>
+            <p><strong>A retirer uniquement à l'adresse 11-13 rue Pierre et Marie Curie, 75005 PARIS</strong></p>
 
         </div>
+        <div class="col-md-4 mb-3 text-center">
+            <div class="hvrbox zoom">
+                <img src="images/scaled/stefanutti.jpg" alt="Stefanutti" class="img-fluid mx-auto d-block zoom"
+                     width="350" height="350">
+                <div class="hvrbox-layer_top img-fluid mx-auto d-block" width="350" height="350">
+                    <div class="hvrbox-text fit"><strong>L’histoire du système immunitaire</strong><br><br>
+                        Enfouie au sein du corps humain, la protéine Kimy est une héroïne d'aujourd'hui. Cette
+                        protéine du système immunitaire veille constamment à la bonne santé de l'organisme. Un jour, des
+                        bactéries tentent d'entrer dans le corps. Heureusement, Kimy est là!
+                    </div>
+                </div>
 
-        <!--<div class="col-xs-12 col-md-6 col-lg-4 reveal">-->
-        <!--<p>-->
-        <!--</p>-->
-        <!--<img src="images/Book_example_paint_s.jpg" alt="Kitten painters" class="img-fluid">-->
-        <!--</div>-->
+            </div>
+
+            <form class="form-inline justify-content-center mt-5 mb-3" target="paypal"
+                  action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="LS3LQW59AF936">
+                <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_cart_LG.gif" border="0"
+                       name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+                     height="1">
+            </form>
+
+            <p><strong>Aucun envoi postal</strong></p>
+            <p><strong>A retirer uniquement à l'adresse 11-13 rue Pierre et Marie Curie, 75005 PARIS</strong></p>
+
+        </div>
+        <div class="col-md-4 mb-3 text-center">
+            <div class="hvrbox zoom">
+
+                <img src="images/scaled/kuperstein.jpg" alt="Kuperstein" class="img-fluid mx-auto d-block zoom"
+                     width="350"
+                     height="350">
+
+                <div class="hvrbox-layer_top img-fluid mx-auto d-block" width="350" height="350">
+                    <div class="hvrbox-text fit"><strong>Une histoire sur une cellule déréglée</strong><br><br>
+                        Toutes les cellules qui composent le corps humain se portent bien quand l'une d'elles se met
+                        à
+                        se multiplier à une vitesse folle. L'ensemble de ces cellules déréglées forme une masse qui
+                        devient M. Cancer. Vite, il faut trouver une solution avant que M. Cancer prenne toute la
+                        place.
+                    </div>
+                </div>
+            </div>
+
+
+            <form class="form-inline justify-content-center mt-5 mb-3" target="paypal"
+                  action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="JEE2HZVK8ACEE">
+                <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_cart_LG.gif" border="0"
+                       name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+                     height="1">
+            </form>
+
+            <p><strong>Aucun envoi postal</strong></p>
+            <p><strong>A retirer uniquement à l'adresse 11-13 rue Pierre et Marie Curie, 75005 PARIS</strong></p>
+
+        </div>
 
     </div>
 </div>
 
-<!--TODO: Paypal add to cart button should be shown in French (and paymen page too)-->
 
-<div class="flex-container mt-5 reveal">
+<div id="exhibitions" class="parallax sep-4 mt-5 mb-4"></div>
+
+
+<div class="container">
+    <h1 class="display-3 text-center mb-4">Expositions</h1>
     <div class="row">
-        <div class="col-md-4 mb-3 reveal">
-            <img src="images/scaled/markova.jpg" alt="Markova" class="img-fluid mx-auto d-block zoom" width="350"
-                 height="350">
-            <form class="form-inline justify-content-center mt-5 mb-3" target="paypal"
-                  action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="QHVU5P7H4JC4L">
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0"
-                       name="submit" alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-            </form>
-            <p><strong>Aucun envoi postal</strong></p>
-            <p><strong>A retirer uniquement à l'adresse 11-13 rue Pierre et Marie Curie, 75005 PARIS</strong></p>
-        </div>
-        <div class="col-md-4 mb-3 reveal">
-            <img src="images/scaled/stefanutti.jpg" alt="Stefanutti" class="img-fluid mx-auto d-block zoom" width="350"
-                 height="350">
-            <form class="form-inline justify-content-center mt-5 mb-3" target="paypal"
-                  action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="MWXEB8T8T2AWJ">
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0"
-                       name="submit" alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-            </form>
-            <p><strong>Aucun envoi postal</strong></p>
-            <p><strong>A retirer uniquement à l'adresse 11-13 rue Pierre et Marie Curie, 75005 PARIS</strong></p>
-        </div>
-        <div class="col-md-4 mb-3 reveal">
-            <img src="images/scaled/kuperstein.jpg" alt="Kuperstein" class="img-fluid mx-auto d-block zoom" width="350"
-                 height="350">
-            <form class="form-inline justify-content-center mt-5 mb-3" target="paypal"
-                  action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="WV9ULEEV8WLES">
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0"
-                       name="submit"
-                       alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-            </form>
-            <p><strong>Aucun envoi postal</strong></p>
-            <p><strong>A retirer uniquement à l'adresse 11-13 rue Pierre et Marie Curie, 75005 PARIS</strong></p>
-        </div>
-    </div>
-</div>
-
-
-<div class="flex-container mt-5 reveal" id="exhibitions">
-    <h1 class="text-center mb-3 display-3">Exposition</h1>
-    <div class="row justify-content-center">
-
-        <div class="col-xs-12 col-md-6 col-lg-4 reveal">
-            <img src="images/Exhibition_s.jpg" alt="Poster" class="img-fluid" width="500">
-            <p>
-            </p>
-        </div>
-
-        <div class="col-xs-12 col-md-6 col-lg-4 reveal">
+        <div class="col-xs-12 col-md-6">
             <p>Pour compléter les livres que nous publions et célébrer les superbes œuvres d'art que chaque livre
                 contient, nous prévoyons une exposition appelée «Le Jardin de Curiosités». Elle se déroulera durant
                 l'été 2019 dans les Jardins de Curie de l'Institut Curie lui-même. S'il vous plaît <a
                         href="mailto:asso.actine@gmail.com">envoyez-nous un email</a>
                 si vous souhaitez en savoir plus, ou mieux, suivez-nous sur les réseaux sociaux pour connaître notre
                 avancé jour après jour!
-
             </p>
+        </div>
+
+        <div class="col-xs-12 col-md-6 mb-3">
+            <img src="images/Exhibition_s2.jpg" alt="Poster" class="mx-auto d-block img-fluid" width="350"
+                 height="350">
         </div>
     </div>
 </div>
 
 
-<div class="flex-container mt-5 text-center reveal">
-    <h1 class="mb-3 display-3">Nous Contacter</h1>
-    <div class="row justify-content-center">
+<div id="join" class="parallax sep-5 mt-5 mb-4"></div>
 
-        <p>N'hésitez pas à nous <a href="mailto:asso.actine@gmail.com">contacter par email!</a> ou à nous suivre sur nos
+
+<div class="container">
+    <h1 class="display-3 text-center mb-4">Rejoignez-nous!</h1>
+    <div class="row">
+        <div class="col-sm-6 order-1 order-sm-1">
+            <h1 class="text-center mb-2">Lisez les docs</h1>
+
+            <p>Si vous aimez ce que nous faisons et que vous souhaitez rejoindre notre association, vous êtes au bon endroit! Ci-joint vous trouverez plus de détails sur le règlement intérieur de l'association</p>
+
+            <p>Pour adhérer à notre association, vous devrez signer le document "Bulletin d'adhésion" (cliquez sur le bouton "Télécharger" ci-dessous) et nous le renvoyer par <a
+                    href="mailto:asso.actine@gmail.com">e-mail</a>.
+            </p>
+        </div>
+
+        <div class="col-sm-6 order-3 order-sm-2">
+            <h1 class="text-center mb-2">S'inscrire</h1>
+
+            <p>Nous sommes une association à but non lucratif mais des frais d'adhésions vous sont demandés pour cette année afin de couvrir et rembourser les frais administratifs engagés.</p>
+            <p>Vous pouvez effectuer ce paiement en toute sécurité via Paypal en cliquant sur le bouton "Inscription" ci-dessous. Si vous avez des questions sur ce que cela implique, n'hésitez pas à nous contacter!</p>
+        </div>
+
+        <div class="col-sm-6 text-center mb-4 order-2 order-sm-3">
+
+            <a class="btn btn-danger" role="button" href="docs/asso_actin.zip" download="asso_actin">Télécharger</a>
+        </div>
+
+        <div class="col-sm-6 mb-4 text-center order-4 order-sm-4">
+
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="GTRGZHDWBCAH4">
+                <button class="btn btn-success" role="button">Inscription! <i class="fab fa-paypal "></i></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="parallax sep-6 mt-5 mb-4"></div>
+
+
+<div class="container text-center">
+    <h1 class="display-3 mb-4">Nous Contacter</h1>
+    <div class="row justify-content-center mb-4">
+        <p>N'hésitez pas à nous <a href="mailto:asso.actine@gmail.com">contacter par email</a> ou à nous suivre sur nos
             réseaux sociaux si vous avez des questions ou souhaitez simplement nous saluer! Votre retour sera la clef
             de notre évolution à devenir meilleur!
         </p>
+    </div>
+</div>
 
-        <div class="col-md-12">
-            <iframe src="https://maps.google.com/maps?q=11%20Rue%20Pierre%20et%20Marie%20Curie%2C%2075005%20Paris&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                    width="100%" height="450" frameborder="0" style="border:0"></iframe>
-        </div>
+
+<div class="container-fluid  text-center">
+    <div class="row justify-content-center">
+        <iframe src="https://maps.google.com/maps?q=11%20Rue%20Pierre%20et%20Marie%20Curie%2C%2075005%20Paris&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%" height="450" frameborder="0"></iframe>
     </div>
 </div>
 
@@ -365,6 +467,6 @@
         crossorigin="anonymous"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script type="text/javascript" src='js/main.js'></script>
-
+<script type="text/javascript" src='js/screen_breaks.js'></script>
 </body>
 </html>
