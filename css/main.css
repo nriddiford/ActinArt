@@ -200,7 +200,7 @@ header {
 }
 
 .parallax.sep-6 {
-    background: linear-gradient(rgba(62, 212, 65, 0.96), rgba(246, 162, 69, 0.96));
+    background: linear-gradient(rgba(110, 226, 144, 0.96), rgba(188, 246, 22, 0.96));
     background-attachment: fixed;
 }
 /* Footer */
@@ -289,4 +289,10 @@ header {
 
 a:hover {
     text-decoration: none;
+}
+
+
+.carousel-inner{
+    width:100%;
+    max-height: 400px !important;
 }
